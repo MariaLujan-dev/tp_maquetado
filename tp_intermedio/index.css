@@ -1,3 +1,4 @@
+/* Reseteo general: elimina márgenes y paddings por defecto del navegador */
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@
 
 
 
-
+/* Cuerpo: fondo gris claro y configuración para que el footer siempre quede abajo */
 body{
     background-color: #f5f5f5;
     min-height: 100vh;
@@ -15,7 +16,7 @@ body{
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* Títulos: espaciado y centrado de los encabezados principales */
 main > h1{
     margin: 2rem 0;
 }
@@ -24,7 +25,7 @@ h1{
     text-align: center;
 }
 
-
+/* Header y Navegación: fondo oscuro y distribución alineada del logo y menú */
 header{
     background-color:#363661;
     padding: 1rem 2rem;
@@ -39,7 +40,7 @@ header nav {
 .logo{
     width: 150px;
 }
-
+/* Listas y Enlaces: quita puntos de lista y da estilo a los links del sitio */
 header nav ul{
     display: flex;
     gap: 2rem;
@@ -57,7 +58,7 @@ ul li a, footer a{
     color: #f5f5f5;
 }
 
-
+/* Carrusel: ajustes de tamaño de imagen y botones de navegación */
 .carousel{
     padding: 0 5rem;
 }
@@ -72,7 +73,7 @@ ul li a, footer a{
     width: auto;
     margin: auto;
 }
-
+/* Footer: fondo oscuro, texto centrado y empujado al final de la pantalla */
 footer{
     background-color: #363661;
     color: white;
@@ -80,6 +81,8 @@ footer{
     padding: 2rem;
     margin-top: auto
 }
+
+/* Empuja el footer al fondo gracias al flex del body */
 
 .footer-nav{
     gap: 1.5rem;

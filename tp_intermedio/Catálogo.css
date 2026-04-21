@@ -1,3 +1,5 @@
+/* Galería: usa Grid para crear columnas automáticas que se adaptan al ancho de la pantalla */
+/* Ancho máximo de la galería con max-width */
 .gallery{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -6,7 +8,7 @@
     margin: 0 auto;
     margin-bottom: 3rem;
 }
-
+/* Imágenes: define el tamaño uniforme y el estilo visual (bordes y sombra) */
 .gallery img{
     width: 100%;
     height: 250px;
@@ -16,7 +18,7 @@
     transition: 0.3s;
 
 }
-
+/* Efecto Hover: agranda ligeramente la imagen cuando pasas el mouse */
 .gallery img:hover{
     transform: scale(1.05);
 
